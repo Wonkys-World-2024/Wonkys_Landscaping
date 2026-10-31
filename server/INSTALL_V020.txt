@@ -1,0 +1,16 @@
+WONKYS LANDSCAPING v0.20 - EQUIPMENT TEST
+
+1. Replace the Wonkys_Landscaping resource and restart it.
+2. Add these two items to ox_inventory/data/items.lua (inside the items table):
+
+['landscape_pushmower'] = {label='Company Push Mower',weight=3500,stack=false,close=true,client={export='Wonkys_Landscaping.usePushMower'}},
+['landscape_leafblower'] = {label='Company Leaf Blower',weight=2200,stack=false,close=true,client={export='Wonkys_Landscaping.useLeafBlower'}},
+
+3. Restart the server or ox_inventory to register new items.
+4. Start a shift; use ox_target on supervisor to collect either tool.
+5. Use from inventory. Press X to stop. /landscape_stoptool is backup.
+
+Push mower: cuts persistent grass and contributes to paid mowing contracts.
+Leaf blower: prop, animation and motor sound only in this build; leaf piles, bags, paid leaf contracts and XP are next phase.
+The push mower is currently a handheld attached visual approximation, not yet a full realistic push locomotion rig.
+Existing fleet, strimmer, paid contracts, tablet and leaderboard are retained.
